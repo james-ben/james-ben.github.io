@@ -1,6 +1,7 @@
 # Benjamin James
 
-[bjames@byu.net](mailto:bjames@byu.net)
+Contact: [bjames@byu.net](mailto:bjames@byu.net)
+
 
 # Skills
 
@@ -29,29 +30,29 @@
 
 # Projects
 
-## COAST (work)
+### COAST (work)
 
 **CO**mpiler-**A**ssisted **S**oftware fault **T**olerance
 
-https://github.com/byuccl/coast
+[https://github.com/byuccl/coast](https://github.com/byuccl/coast)
 
-## Qemu fork (work)
+### Qemu fork (work)
 
 A fork of Qemu to do cache emulation.  _Currently under development_
 
-https://github.com/byuccl/qemu
+[https://github.com/byuccl/qemu](https://github.com/byuccl/qemu)
 
-## Christmas Tree Lights
+### Christmas Tree Lights
 
 Code for controlling NeoPixel strands of lights
 
-https://github.com/james-ben/christmas-lights
+[https://github.com/james-ben/christmas-lights](https://github.com/james-ben/christmas-lights)
 
-## Miscellany
+### Miscellany
 
 A collection of various scripts which are probably useful
 
-https://github.com/james-ben/miscellany
+[https://github.com/james-ben/miscellany](https://github.com/james-ben/miscellany)
 
 
 
@@ -74,22 +75,22 @@ https://github.com/james-ben/miscellany
 
 # Publications
 
-M. Bohman, B. James, M. J. Wirthlin, H. Quinn and J. Goeders, "[Microcontroller Compiler-Assisted Software Fault Tolerance](https://ieeexplore.ieee.org/document/8571250)," in IEEE Transactions on Nuclear Science, vol. 66, no. 1, pp. 223-232, Jan. 2019. \
+M. Bohman, B. James, M. J. Wirthlin, H. Quinn and J. Goeders, "[Microcontroller Compiler-Assisted Software Fault Tolerance](https://ieeexplore.ieee.org/document/8571250)," in IEEE Transactions on Nuclear Science, vol. 66, no. 1, pp. 223-232, Jan. 2019.  
 [DOI: 10.1109/TNS.2018.2886094](https://doi.org/10.1109/TNS.2018.2886094)
 
-B. James, H. Quinn, M. Wirthlin and J. Goeders, "[Applying Compiler-Automated Software Fault Tolerance to Multiple Processor Platforms](https://ieeexplore.ieee.org/document/8933038)," in IEEE Transactions on Nuclear Science, vol. 67, no. 1, pp. 321-327, Jan. 2020. \
+B. James, H. Quinn, M. Wirthlin and J. Goeders, "[Applying Compiler-Automated Software Fault Tolerance to Multiple Processor Platforms](https://ieeexplore.ieee.org/document/8933038)," in IEEE Transactions on Nuclear Science, vol. 67, no. 1, pp. 321-327, Jan. 2020.  
 [DOI: 10.1109/TNS.2019.2959975](https://doi.org/10.1109/TNS.2019.2959975)
 
 
 # References
 
-**_Brigham Young University_** \
-Professor Jeffrey Goeders \
-Computer Engineering Department \
+**_Brigham Young University_**  
+Professor Jeffrey Goeders  
+Computer Engineering Department  
 [jgoeders@byu.edu](mailto:jgoeders@byu.edu)
 
-**_Other_** \
-Tim Eversole \
-Martial Arts Instructor \
-[tdeversole@yahoo.com](mailto:tdeversole@yahoo.com) \
+**_Other_**  
+Tim Eversole  
+Martial Arts Instructor  
+[tdeversole@yahoo.com](mailto:tdeversole@yahoo.com)  
 801-874-9794
