@@ -1,6 +1,11 @@
-# Benjamin James
+[//]: # (TODO: is there a way to make this more easily downloadable?)
+[//]: # (TODO: Better project descriptions, including skills learned)
 
-Contact: [bjames@byu.net](mailto:bjames@byu.net)
+## Contact
+
+[Email](mailto:bjames@byu.net)  
+[LinkedIn](linkedin.com/in/benjamin-james-a83342121)  
+[Github](https://github.com/james-ben)
 
 
 # Skills
@@ -9,23 +14,25 @@ Contact: [bjames@byu.net](mailto:bjames@byu.net)
 - Python 3
 - Bash scripting
 - LLVM compiler framework
+- Embedded Linux
 - Detail-oriented
+- Black belt in [Kishindo Martial Arts](https://www.facebook.com/BushiKaiKishindo/)
 
 
-# Experience
+# Work Experience
 
 ### Research Assistant - BYU Configurable Computing Lab (May 2017 - Present)
 
-- Working for Professor Jeffrey Goeders
-- Helped to create the Compiler-Assisted Software Fault Tolerance ([COAST](https://github.com/byuccl/coast)) tool
+- Primary developer for the Compiler-Assisted Software Fault Tolerance ([COAST](https://github.com/byuccl/coast)) tool
   - Tested performance of tool in radiation beam
   - Increased Mean Time Between Failure (MTBF) on code run with COAST
 - Created faul injection simulation tool to test radiation tolerance of processors
+- Working with Professor Jeffrey Goeders
 
 ### Teaching Assistant - (May - Dec 2018)
 
-- Worked for Professor Brad Hutchings to update senior level engineering class to an embedded Linux system
-- Implemented a Linux kernel driver to interact with the HDMI interface
+- Implemented Linux kernel drivers to interact with the HDMI and audio hardware on the [Xilinx PYNQ](https://www.xilinx.com/support/university/boards-portfolio/xup-boards/XUPPYNQ.html) embedded Linux platform
+- Worked to update senior level engineering class to use the Xilinx PYNQ board, supervised by Professor Brad Hutchings
 
 
 # Projects
@@ -36,15 +43,24 @@ Contact: [bjames@byu.net](mailto:bjames@byu.net)
 
 [https://github.com/byuccl/coast](https://github.com/byuccl/coast)
 
+An effort to add fault tolerance to Commercial Off-the-shelf (COTS) microcontrollers using software techniques.  
+See the [Publications](#publications) below.
+
 ### Qemu fork (work)
 
 A fork of Qemu to do cache emulation.  _Currently under development_
 
 [https://github.com/byuccl/qemu](https://github.com/byuccl/qemu)
 
-### Christmas Tree Lights
+### Self-driving cars (school)
 
-Code for controlling NeoPixel strands of lights
+Created a self-driving car platform from scratch for a graduate engineering course.  Used Nvidia Jetson Nano, Intel RealSense camera, OpenCV, and lots of Python.
+
+[![BYU Self-driving cars](http://img.youtube.com/vi/KvFrLZTMihI/0.jpg)](http://www.youtube.com/watch?v=KvFrLZTMihI)
+
+### Christmas Tree Lights (fun)
+
+Code for controlling NeoPixel strands of lights, as well as a neat little web interface for setting up lighting routines.  An annual project.
 
 [https://github.com/james-ben/christmas-lights](https://github.com/james-ben/christmas-lights)
 
@@ -70,6 +86,7 @@ A collection of various scripts which are probably useful
 
 ### MS, Computer Engineering - Brigham Young University
 
+- Expanding the coverage of [COAST](https://github.com/byuccl/coast) to include [FreeRTOS](https://www.freertos.org/), a common Real-Time Operating System.
 - Expected Graduation: April 2021
 
 
@@ -78,8 +95,14 @@ A collection of various scripts which are probably useful
 M. Bohman, B. James, M. J. Wirthlin, H. Quinn and J. Goeders, "[Microcontroller Compiler-Assisted Software Fault Tolerance](https://ieeexplore.ieee.org/document/8571250)," in IEEE Transactions on Nuclear Science, vol. 66, no. 1, pp. 223-232, Jan. 2019.  
 [DOI: 10.1109/TNS.2018.2886094](https://doi.org/10.1109/TNS.2018.2886094)
 
+Abstract:
+> Commercial off-the-shelf microcontrollers can be useful for noncritical processing on spaceborne platforms. These microprocessors can be inexpensive and consume small amounts of power. However, the software running on these processors is vulnerable to radiation upsets. In this paper, we present a fully automated, configurable, software-based tool to increase the reliability of microprocessors in high-radiation environments. This tool consists of a set of open-source LLVM compiler passes to automatically implement software-based mitigation techniques. We duplicate or triplicate computations and insert voting mechanisms into software during the compilation process, allowing for runtime error correction. While the techniques we implement are not novel, previous work has typically been closed source, processor architecture dependent, not automated, and not tested in real high-radiation environments. In contrast, the compiler passes presented in this paper are publicly available, highly customizable, and are platform independent and language independent. We have tested our modified software using both fault injection and through neutron beam radiation on a Texas Instruments MSP430 microcontroller. When tested by a neutron beam, we were able to decrease the cross section of programs by 17-29x, increasing mean-work-to-failure by 4-7x.
+
 B. James, H. Quinn, M. Wirthlin and J. Goeders, "[Applying Compiler-Automated Software Fault Tolerance to Multiple Processor Platforms](https://ieeexplore.ieee.org/document/8933038)," in IEEE Transactions on Nuclear Science, vol. 67, no. 1, pp. 321-327, Jan. 2020.  
 [DOI: 10.1109/TNS.2019.2959975](https://doi.org/10.1109/TNS.2019.2959975)
+
+Abstract:
+> Several recent works have explored the feasibility of using commercial off-the-shelf (COTS) processing systems in radiation-prone environments, such as spacecraft. Typically, this approach requires some form of protection to ensure that the software can tolerate radiation upsets without compromising the system. Our recent work, COmpiler Assisted Software fault Tolerance (COAST), provides automated compiler modification of software programs to insert dualor triple-modular redundancy. In this article, we extend COAST to support several new processing platforms, including RISC-V and Xilinx, San Jose, CA, USA, SoC-based products. The automated software protection mechanisms are tested for a variety of configurations, altering the benchmark and cache configuration. Across the different configurations, the cross sections were improved by 4x to 106x. In addition, a hardware-mitigation technique is tested using dual-lock-step cores on the Texas Instruments, Dallas, TX, USA, Hercules platform, which is compared with the software only mitigation approach.
 
 
 # References
