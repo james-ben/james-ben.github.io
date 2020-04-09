@@ -13,6 +13,7 @@
 - Embedded programming (C)
 - Python 3
 - Bash scripting
+- C++
 - LLVM compiler framework
 - Embedded Linux
 - Detail-oriented
@@ -26,8 +27,7 @@
 - Primary developer for the Compiler-Assisted Software Fault Tolerance ([COAST](https://github.com/byuccl/coast)) tool
   - Tested performance of tool in radiation beam
   - Increased Mean Time Between Failure (MTBF) on code run with COAST
-- Created faul injection simulation tool to test radiation tolerance of processors
-- Working with Professor Jeffrey Goeders
+- Created fault injection simulation tool to test radiation tolerance of processors
 
 ### Teaching Assistant - (May - Dec 2018)
 
@@ -41,10 +41,39 @@
 
 **CO**mpiler-**A**ssisted **S**oftware fault **T**olerance
 
-[https://github.com/byuccl/coast](https://github.com/byuccl/coast)
+[Public Release](https://github.com/byuccl/coast)
 
 An effort to add fault tolerance to Commercial Off-the-shelf (COTS) microcontrollers using software techniques.  
-See the [Publications](#publications) below.
+
+As the primary developer on this project since May 2018, I have accomplished a number of things on this project:
+
+- Expanded support to multiple platforms/architectures
+- Worked to support C++ front-end
+- Created software test driver for use in a radiation beam
+- Automated testsuite using [BuildBot](https://buildbot.net/)
+
+Design challenges:
+
+- LLVM C++ API has [spotty documentation](https://llvm.org/doxygen/index.html)
+- Verifying that the protection flags are self-consitent (correct replication scope rules)
+- Make sure changes to dataflow don't affect control flow, even when creating new basic blocks
+
+Current/Future Work:
+
+- Creating a fault injection platform on top of the [QEMU emulator](https://www.qemu.org/)
+- Support for [FreeRTOS](https://www.freertos.org/)
+
+Mean Work to Failure (MWTF) is a metric used to measure the increase in reliability in systems.  
+For a more description, see [Section 7](https://liberty.princeton.edu/Publications/taco05_ft.pdf) or [page 274](https://books.google.com/books?id=gBEpCwAAQBAJ&lpg=PA274&ots=cLL0yFBcbv&dq=%22mean%20work%20to%20failure%22%20reliability&pg=PA274#v=onepage&q=%22mean%20work%20to%20failure%22&f=false)
+
+MWTF increases shown in results of radiation tests:
+
+- [HiFive1](https://www.sifive.com/boards/hifive1): 2.0x - 35.9x
+- [PYNQ-Z1](https://store.digilentinc.com/pynq-z1-python-productivity-for-zynq-7000-arm-fpga-soc/):
+  - MxM configurations: 1.2x - 10.0x
+  - Various benchmarks: 2.5x - 53.9x
+
+See the [Publications](#publications) below for more information.
 
 ### Qemu fork (work)
 
