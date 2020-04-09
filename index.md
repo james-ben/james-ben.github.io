@@ -54,9 +54,9 @@ As the primary developer on this project since May 2018, I have accomplished a n
 
 Design challenges:
 
-- LLVM C++ API has [spotty documentation](https://llvm.org/doxygen/index.html)
-- Verifying that the protection flags are self-consitent (correct replication scope rules)
-- Make sure changes to dataflow don't affect control flow, even when creating new basic blocks
+- Automatically instrumenting user code requires significant validation testing to make sure program is still functionally correct.
+- Breaking control flow for synchronization points invalidates many basic block references that must be updated.
+- User may give protection flags that contradict each other; substantial analysis required to ensure valid scope of replication.
 
 Current/Future Work:
 
