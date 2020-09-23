@@ -4,7 +4,7 @@
 ## Contact
 
 [Email](mailto:bjames@byu.net)  
-[LinkedIn](linkedin.com/in/benjamin-james-a83342121)  
+[LinkedIn](https://linkedin.com/in/benjamin-james-a83342121)  
 [Github](https://github.com/james-ben)
 
 
@@ -77,9 +77,11 @@ See the [Publications](#publications) below for more information.
 
 ### Qemu fork (work)
 
-A fork of Qemu to do cache emulation.  _Currently under development_
+A fork of Qemu, with plugins which support cache emulation, and fault injection on the Zynq-7000 SoC.
 
 [https://github.com/byuccl/qemu](https://github.com/byuccl/qemu)
+
+Fault injection setup will be released with the next public version of COAST.
 
 ### Self-driving cars (school)
 
