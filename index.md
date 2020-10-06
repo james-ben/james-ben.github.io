@@ -1,5 +1,6 @@
 [//]: # (TODO: is there a way to make this more easily downloadable?)
 [//]: # (TODO: Better project descriptions, including skills learned)
+[//]: # (Reference: https://www.markdownguide.org/tools/github-pages)
 
 ## Contact
 
@@ -26,8 +27,9 @@
 
 - Primary developer for the Compiler-Assisted Software Fault Tolerance ([COAST](https://github.com/byuccl/coast)) tool
   - Tested performance of tool in radiation beam
-  - Increased Mean Time Between Failure (MTBF) on code run with COAST
+  - Increased Mean Work To Failure (MWTF) for code run with COAST
 - Created fault injection simulation tool to test radiation tolerance of processors
+- Protected the FreeRTOS kernel from SEUs using COAST
 
 ### Teaching Assistant - (May - Dec 2018)
 
@@ -50,18 +52,20 @@ As the primary developer on this project since May 2018, I have accomplished a n
 - Expanded support to multiple platforms/architectures
 - Worked to support C++ front-end
 - Created software test driver for use in a radiation beam
-- Automated testsuite using [BuildBot](https://buildbot.net/)
+- Automated testsuite using ~~[BuildBot](https://buildbot.net/)~~ [Travis CI](https://travis-ci.org/)
+- Created fault tolerant [FreeRTOS](https://freertos.org/) kernel and applications
 
 Design challenges:
 
 - Automatically instrumenting user code requires significant validation testing to make sure program is still functionally correct.
 - Breaking control flow for synchronization points invalidates many basic block references that must be updated.
 - User may give protection flags that contradict each other; substantial analysis required to ensure valid scope of replication.
+- Important parts of the FreeRTOS kernel are written in port-specific assembly, making it hard to keep the integrity of the Scope of Replication.
 
-Current/Future Work:
+Current Work:
 
-- Creating a fault injection platform on top of the [QEMU emulator](https://www.qemu.org/)
-- Support for [FreeRTOS](https://www.freertos.org/)
+- Running tests using a fault injection platform built on top of the [QEMU emulator](https://www.qemu.org/)
+- Writing about the work done to protect FreeRTOS
 
 Mean Work to Failure (MWTF) is a metric used to measure the increase in reliability in systems.  
 For a more description, see [Section 7](https://liberty.princeton.edu/Publications/taco05_ft.pdf) or [page 274](https://books.google.com/books?id=gBEpCwAAQBAJ&lpg=PA274&ots=cLL0yFBcbv&dq=%22mean%20work%20to%20failure%22%20reliability&pg=PA274#v=onepage&q=%22mean%20work%20to%20failure%22&f=false)
