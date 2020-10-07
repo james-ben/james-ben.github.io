@@ -5,7 +5,7 @@
 ## Contact
 
 [Email](mailto:bjames@byu.net)  
-[LinkedIn](https://linkedin.com/in/benjamin-james-a83342121)  
+[LinkedIn](https://www.linkedin.com/in/benjamin--james)  
 [Github](https://github.com/james-ben)
 
 
@@ -21,13 +21,33 @@
 - Black belt in [Kishindo Martial Arts](https://www.facebook.com/BushiKaiKishindo/)
 
 
+
+# Education
+
+### BS, Computer Engineering - Brigham Young University
+
+- GPA: 3.83
+- Computer Science Minor
+- Graduated April 2019
+- GRE Oct 2018:
+  - Verbal Reasoning: 167
+  - Quantitative Reasoning: 164
+  - Analytical Writing: 5
+
+### MS, Computer Engineering - Brigham Young University
+
+- Expanding the coverage of [COAST](https://github.com/byuccl/coast) to include [FreeRTOS](https://www.freertos.org/), a common Real-Time Operating System.
+- Expected Graduation: April 2021
+
+
+
 # Work Experience
 
 ### Research Assistant - BYU Configurable Computing Lab (May 2017 - Present)
 
 - Primary developer for the Compiler-Assisted Software Fault Tolerance ([COAST](https://github.com/byuccl/coast)) tool
-  - Tested performance of tool in radiation beam
-  - Increased Mean Work To Failure (MWTF) for code run with COAST
+  - Tested performance of tool in radiation beam (3 separate, week-long tests)
+  - Increased Mean Work To Failure for code run with COAST by 1.2x - 54x across 12 configurations
 - Created fault injection simulation tool to test radiation tolerance of processors
 - Protected the FreeRTOS kernel from SEUs using COAST
 
@@ -45,7 +65,7 @@
 
 [Public Release](https://github.com/byuccl/coast)
 
-An effort to add fault tolerance to Commercial Off-the-shelf (COTS) microcontrollers using software techniques.  
+A tool that adds software fault tolerance to Commercial Off-the-shelf (COTS) microcontrollers.  
 
 As the primary developer on this project since May 2018, I have accomplished a number of things on this project:
 
@@ -81,15 +101,15 @@ See the [Publications](#publications) below for more information.
 
 ### Qemu fork (work)
 
-A fork of Qemu, with plugins which support cache emulation, and fault injection on the Zynq-7000 SoC.
+Using Qemu v4.2, I created plugins which support cache emulation and fault injection on the Zynq-7000 SoC.
 
 [https://github.com/byuccl/qemu](https://github.com/byuccl/qemu)
 
-Fault injection setup will be released with the next public version of COAST.
+Fault injection setup will be released with the next public version of COAST (v1.5).
 
 ### Self-driving cars (school)
 
-Created a self-driving car platform from scratch for a graduate engineering course.  Used Nvidia Jetson Nano, Intel RealSense camera, OpenCV, and lots of Python.
+I worked on a team to create a self-driving car platform from scratch for a graduate engineering course.  Used Nvidia Jetson Nano, Intel RealSense camera, OpenCV, and lots of Python.
 
 [![BYU Self-driving cars](http://img.youtube.com/vi/KvFrLZTMihI/0.jpg)](http://www.youtube.com/watch?v=KvFrLZTMihI)
 
@@ -101,28 +121,10 @@ Code for controlling NeoPixel strands of lights, as well as a neat little web in
 
 ### Miscellany
 
-A collection of various scripts which are probably useful
+A collection of various scripts which are probably useful.
 
 [https://github.com/james-ben/miscellany](https://github.com/james-ben/miscellany)
 
-
-
-# Education
-
-### BS, Computer Engineering - Brigham Young University
-
-- GPA: 3.83
-- Computer Science Minor
-- Graduated April 2019
-- GRE Oct 2018:
-  - Verbal Reasoning: 167
-  - Quantitative Reasoning: 164
-  - Analytical Writing: 5
-
-### MS, Computer Engineering - Brigham Young University
-
-- Expanding the coverage of [COAST](https://github.com/byuccl/coast) to include [FreeRTOS](https://www.freertos.org/), a common Real-Time Operating System.
-- Expected Graduation: April 2021
 
 
 # Publications
